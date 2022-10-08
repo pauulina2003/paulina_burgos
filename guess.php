@@ -1,20 +1,20 @@
 <?php
 
-$num = rand(0,10);
+$num = rand(1,10);
 $intentos = 5;
 $entrada = -1;
 while ($entrada != $num || $intentos < 0){
-    $entrada = readline("Adivina que un numero entre el 0 y el 10\n");
+    $entrada = readline("Introdueix un número del 0 al 10 des de l'entrada standard: ");
     if ($entrada != $num){
         $intentos -= 1;
         if ($intentos == 0){
-            echo "Te has quedado sin intentos, el numero correcto era $num\n";
+            echo "Has perdut, el número era: $num\n";
             break;
         }else {
-            echo "Ese no es, te quedan $intentos\n";
+            echo "Et queden $intentos intents\n";
         }
     }else {
-        echo "Felicidades, has adivinado el numero, era $num\n";
+        echo "Has guanyat, el número era: $num\n";
     }
 }
 ?>
