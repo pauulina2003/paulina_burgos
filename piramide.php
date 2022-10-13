@@ -1,12 +1,7 @@
 <?php
-echo "<p>&nbsp;*&nbsp;</p>";
-echo "<p>*&nbsp;*&nbsp;</p>";
-echo "<p>*&nbsp;*&nbsp;*&nbsp;</p>";
-echo "<p>*&nbsp;*&nbsp;*&nbsp;*&nbsp;</p>";
-echo "<p>*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;</p>";
-echo "<p>*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;</p>";
-echo "<p>*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;</p>";
-echo "<p>*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;</p>";
-echo "<p>*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;</p>";
-echo "<p>*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;</p>";
-?>
+
+for ($x = 1; $x <= 10; $x++) {
+    echo str_repeat("&nbsp", 10-$x);
+    echo str_repeat("*&nbsp", $x);
+    echo "<br>";
+}
